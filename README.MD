@@ -34,7 +34,7 @@ npm install --save-dev babel-polyfill
 babel polyfill.js fable-core.js --plugins babel-plugin-transform-es2015-modules-umd -o fable-core-umd.js
 2. Simply copy past content of "fable-core-umd.js"
 
-### NOTE 3: some opinionable changed ......
+### NOTE: some opinionable changed ......
 1. in fable-core.ts I changed "catch" => "GAS_catch" due to Google Script compleining with name resolution:
   static awaitPromise<T>(p: Promise<T>) {
     return Async.fromContinuations((conts: Array<Continuation<T>>) =>
